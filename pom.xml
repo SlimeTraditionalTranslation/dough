@@ -79,14 +79,14 @@
         <module>dough-reflection</module>
 
         <!-- Implementing modules -->
-        <module>dough-config</module>
-        <module>dough-chat</module>
-        <module>dough-data</module>
-        <module>dough-skins</module>
-        <module>dough-items</module>
-        <module>dough-inventories</module>
-        <module>dough-protection</module>
-        <module>dough-recipes</module>
+<!--        <module>dough-config</module>-->
+<!--        <module>dough-chat</module>-->
+<!--        <module>dough-data</module>-->
+<!--        <module>dough-skins</module>-->
+<!--        <module>dough-items</module>-->
+<!--        <module>dough-inventories</module>-->
+<!--        <module>dough-protection</module>-->
+<!--        <module>dough-recipes</module>-->
         <module>dough-updater</module>
         <module>dough-scheduling</module>
 

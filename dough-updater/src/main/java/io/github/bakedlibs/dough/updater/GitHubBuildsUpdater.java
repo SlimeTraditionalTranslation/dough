@@ -18,7 +18,7 @@ import io.github.bakedlibs.dough.versions.PrefixedVersion;
 
 public class GitHubBuildsUpdater extends AbstractPluginUpdater<PrefixedVersion> {
 
-    private static final String API_URL = "https://thebusybiscuit.github.io/builds/";
+    private static final String API_URL = "https://xmikux.github.io/builds/";
 
     private final String repository;
     private final String prefix;
@@ -42,7 +42,7 @@ public class GitHubBuildsUpdater extends AbstractPluginUpdater<PrefixedVersion> 
             int version = Integer.parseInt(pluginVersion.substring(prefix.length()).split(" ")[0], 10);
             return new PrefixedVersion(prefix, version);
         } else {
-            throw new IllegalArgumentException("Not a valid build version: " + pluginVersion);
+            throw new IllegalArgumentException("這不是一個有效的建構版本: " + pluginVersion);
         }
     }
 
@@ -58,7 +58,7 @@ public class GitHubBuildsUpdater extends AbstractPluginUpdater<PrefixedVersion> 
                     JsonObject json = (JsonObject) new JsonParser().parse(result);
 
                     if (json == null) {
-                        getLogger().log(Level.WARNING, "The Auto-Updater could not connect to github.io, is it down?");
+                        getLogger().log(Level.WARNING, "自動更新無法連線到 github.io, 它離線了?");
                         return null;
                     }
 
