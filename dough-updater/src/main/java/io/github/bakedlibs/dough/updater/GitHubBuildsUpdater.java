@@ -24,7 +24,7 @@ public class GitHubBuildsUpdater extends AbstractPluginUpdater<PrefixedVersion> 
     private final String prefix;
 
     public GitHubBuildsUpdater(@Nonnull Plugin plugin, @Nonnull File file, @Nonnull String repo) {
-        this(plugin, file, repo, "DEV - ");
+        this(plugin, file, repo, "EFI - ");
     }
 
     public GitHubBuildsUpdater(@Nonnull Plugin plugin, @Nonnull File file, @Nonnull String repo, @Nonnull String prefix) {
