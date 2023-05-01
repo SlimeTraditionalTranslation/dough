@@ -42,7 +42,7 @@ public class GitHubBuildsUpdaterTR extends AbstractPluginUpdater<PrefixedVersion
             int version = Integer.parseInt(pluginVersion.substring(prefix.length()).split(" ")[0], 10);
             return new PrefixedVersion(prefix, version);
         } else {
-            throw new IllegalArgumentException("這不是一個有效的建構版本: " + pluginVersion);
+            throw new IllegalArgumentException("這不是有效的建構版本：" + pluginVersion);
         }
     }
 
@@ -58,7 +58,7 @@ public class GitHubBuildsUpdaterTR extends AbstractPluginUpdater<PrefixedVersion
                     JsonObject json = (JsonObject) new JsonParser().parse(result);
 
                     if (json == null) {
-                        getLogger().log(Level.WARNING, "自動更新無法連線到 github.io, 它離線了?");
+                        getLogger().log(Level.WARNING, "自動更新無法連線至「github.io」，它離線了嗎？");
                         return null;
                     }
 

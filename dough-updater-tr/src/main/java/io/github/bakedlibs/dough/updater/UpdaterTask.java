@@ -74,13 +74,13 @@ abstract class UpdaterTask<V extends Version> implements Runnable {
         if (updateInfo.getVersion().isNewerThan(currentVersion)) {
             install(updateInfo);
         } else {
-            plugin.getLogger().log(Level.INFO, "{0} 已經是最新的!", plugin.getName());
+            plugin.getLogger().log(Level.INFO, "{0} 已經是最新的！", plugin.getName());
         }
     }
 
     private void install(@Nonnull UpdateInfo info) {
-        plugin.getLogger().log(Level.INFO, "{0} 已過時!", plugin.getName());
-        plugin.getLogger().log(Level.INFO, "下載 {0}, 版本: {1}", new Object[] { plugin.getName(), info.getVersion() });
+        plugin.getLogger().log(Level.INFO, "{0} 已過時！", plugin.getName());
+        plugin.getLogger().log(Level.INFO, "下載 {0}，版本：{1}", new Object[] { plugin.getName(), info.getVersion() });
 
         try (BufferedInputStream input = new BufferedInputStream(info.getUrl().openStream()); FileOutputStream output = new FileOutputStream(new File("plugins/" + Bukkit.getUpdateFolder(), file.getName()))) {
             byte[] data = new byte[1024];
@@ -90,11 +90,11 @@ abstract class UpdaterTask<V extends Version> implements Runnable {
                 output.write(data, 0, read);
             }
         } catch (Exception x) {
-            plugin.getLogger().log(Level.SEVERE, x, () -> "Failed to auto-update " + plugin.getName());
+            plugin.getLogger().log(Level.SEVERE, x, () -> "自動更新失敗 " + plugin.getName());
         } finally {
             plugin.getLogger().log(Level.INFO, " ");
             plugin.getLogger().log(Level.INFO, "#################### - 更新 - ####################");
-            plugin.getLogger().log(Level.INFO, "{0} 已成功更新 ({1} -> {2})", new Object[] { plugin.getName(), currentVersion, info.getVersion() });
+            plugin.getLogger().log(Level.INFO, "{0} 已成功更新（{1} -> {2}）", new Object[] { plugin.getName(), currentVersion, info.getVersion() });
             plugin.getLogger().log(Level.INFO, "請重啟你的伺服器來使用最新版本");
             plugin.getLogger().log(Level.INFO, " ");
         }
