@@ -16,18 +16,18 @@ import com.google.gson.JsonParser;
 import io.github.bakedlibs.dough.common.CommonPatterns;
 import io.github.bakedlibs.dough.versions.PrefixedVersion;
 
-public class GitHubBuildsUpdater extends AbstractPluginUpdater<PrefixedVersion> {
+public class GitHubBuildsUpdaterTR extends AbstractPluginUpdater<PrefixedVersion> {
 
     private static final String API_URL = "https://xmikux.github.io/builds/";
 
     private final String repository;
     private final String prefix;
 
-    public GitHubBuildsUpdater(@Nonnull Plugin plugin, @Nonnull File file, @Nonnull String repo) {
+    public GitHubBuildsUpdaterTR(@Nonnull Plugin plugin, @Nonnull File file, @Nonnull String repo) {
         this(plugin, file, repo, "EFI - ");
     }
 
-    public GitHubBuildsUpdater(@Nonnull Plugin plugin, @Nonnull File file, @Nonnull String repo, @Nonnull String prefix) {
+    public GitHubBuildsUpdaterTR(@Nonnull Plugin plugin, @Nonnull File file, @Nonnull String repo, @Nonnull String prefix) {
         super(plugin, file, extractBuild(prefix, plugin));
 
         this.repository = repo;

@@ -75,8 +75,8 @@
 
     <modules>
         <!-- Shared base modules -->
-        <module>dough-common</module>
-        <module>dough-reflection</module>
+<!--        <module>dough-common</module>-->
+<!--        <module>dough-reflection</module>-->
 
         <!-- Implementing modules -->
 <!--        <module>dough-config</module>-->
@@ -87,11 +87,11 @@
 <!--        <module>dough-inventories</module>-->
 <!--        <module>dough-protection</module>-->
 <!--        <module>dough-recipes</module>-->
-        <module>dough-updater</module>
-        <module>dough-scheduling</module>
+        <module>dough-updater-tr</module>
+<!--        <module>dough-scheduling</module>-->
 
         <!-- Aggregating modules -->
-        <module>dough-api</module>
+<!--        <module>dough-api</module>-->
     </modules>
 
     <profiles>

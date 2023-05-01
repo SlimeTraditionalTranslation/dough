@@ -394,12 +394,12 @@
         </dependency>
 
         <!-- Lands -->
-        <dependency>
-            <groupId>com.github.angeschossen</groupId>
-            <artifactId>LandsAPI</artifactId>
-            <version>6.5.1</version>
-            <scope>provided</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.angeschossen</groupId>-->
+<!--            <artifactId>LandsAPI</artifactId>-->
+<!--            <version>6.28.11</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
 
         <!-- ChestProtect -->
         <dependency>
