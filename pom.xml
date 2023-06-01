@@ -75,7 +75,7 @@
 
     <modules>
         <!-- Shared base modules -->
-<!--        <module>dough-common</module>-->
+        <module>dough-common</module>
 <!--        <module>dough-reflection</module>-->
 
         <!-- Implementing modules -->
