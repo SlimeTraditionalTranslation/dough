@@ -24,7 +24,7 @@ public class GitHubBuildsUpdaterTR extends AbstractPluginUpdater<PrefixedVersion
     private final String prefix;
 
     public GitHubBuildsUpdaterTR(@Nonnull Plugin plugin, @Nonnull File file, @Nonnull String repo) {
-        this(plugin, file, repo, "EFI - ");
+        this(plugin, file, repo, "Build_STCT - ");
     }
 
     public GitHubBuildsUpdaterTR(@Nonnull Plugin plugin, @Nonnull File file, @Nonnull String repo, @Nonnull String prefix) {
